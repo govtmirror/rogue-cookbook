@@ -49,3 +49,7 @@ describe file('/var/lib/geoserver_data/geogit') do
   it { should be_executable.by_user('rogue') }
   it { should be_readable.by_user('rogue') }
 end
+
+describe file('/usr/lib/python2.6/dist-packages/') do
+  it { should be_directory }
+end
